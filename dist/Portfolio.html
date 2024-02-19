@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/4695656be6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<!-- component -->
+<body class="text-lg">
+
+    
+    <!--Navegation Bar-->
+    <nav class="flex flex-wrap flex-col gap-6 justify-center text-white text-xl font-semibold bg-slate-600 p-6 shadow-lg  sm:flex-row sm:sticky sm:top-0">
+        <a class='group text-white transition-all duration-300 ease-in-out text-center' href='#about'> 
+            <span class='bg-left-bottom bg-gradient-to-r from-slate-200 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> 
+              About 
+            </span> 
+          </a> 
+          <a class='group text-white transition-all duration-300 ease-in-out text-center' href='#skills'> 
+            <span class='bg-left-bottom bg-gradient-to-r from-slate-200 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> 
+              Skills 
+            </span> 
+          </a> 
+          <a class='group text-white transition-all duration-300 ease-in-out text-center' href='#portfolio'> 
+            <span class='bg-left-bottom bg-gradient-to-r from-slate-200 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> 
+              Portfolio 
+            </span> 
+          </a> 
+          <a class='group text-white transition-all duration-300 ease-in-out text-center' href='#contact'> 
+            <span class='bg-left-bottom bg-gradient-to-r from-slate-200 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'> 
+              Contact 
+            </span> 
+          </a> 
+    </nav>
+
+    <!--Introduction-->
+    <section class="flex flex-col p-4 gap-6 items-center shadow-lg sm:flex-row sm:items-start">
+        <div class="flex flex-col gap-y-7 "> 
+            <h1 class="text-3xl text-center sm:text-4xl">Hello World</h1>
+            <p>My name is Allan Vega and I am passionate about software development, in this webpage you will find general information about me, skills in which I perform, my portfolio of projects and ways to contact me.</p>
+        </div>
+        <img id="about" src="/img/fotoPerfil.png" alt="Profile photo of Allan Vega" class="size-56 rounded-xl sm:h-52">
+    </section>
+
+    <!--About me-->
+    <section class="flex flex-col p-4 gap-6 shadow-lg bg-slate-50 sm:flex-row sm:items-start">
+        <div class="flex flex-col gap-y-7 "> 
+            <h1 class="text-3xl sm:text-4xl">About Me!</h1>
+            <p>I'm a student of Software Engineering at Universidad Tecnológica de Panama, therefore I have knowledge in requirements, design and development of software.</p>
+        </div>
+        <img  id="skills"  src="/img/aboutMe.png" alt="Programmer icon" class="size-56 sm:h-52">
+    </section>
+
+    <!--skills-->
+
+    <section class="p-2 shadow-lg bg-slate-100">
+        <h1 class="text-3xl sm:text-4xl">Skills</h1>
+            <div class="grid gap-2 mx-auto sm:grid-cols-2 sm:auto-cols-max sm:w-1/2 sm:self-center">
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid ">
+                    <h2 class="text-xl font-semibold">Requirements analysis</h2>
+                    <p>Once the customer's needs have been determined, the functional and non-functional requirements are established.</p>
+                </div>
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid ">
+                    <h2 class="text-xl font-semibold">Design prototypes</h2>
+                    <p>I have the ability to design high fidelity prototypes in the Figma tool.</p>
+                </div>
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid ">
+                    <h2 class="text-xl font-semibold">Design softwares</h2>
+                    <p>knowledge in UML model.</p>
+                </div>
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid ">
+                    <h2 class="text-xl font-semibold">Knowledge of agile methodologies</h2>
+                    <p>Experience with the Scrum technique.</p>
+                </div>
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid">
+                    <h2 class="text-xl font-semibold">Develop web sites</h2>
+                    <p>I have the ability to develop responsive websites, with html, css, tailwind CSS and JavaScript.</p>
+                </div>
+                <div class="border-b-2 border-dashed p-4 sm:border-neutral-500 sm:border-2 sm:border-solid">
+                    <h2 class="text-xl font-semibold">Soft skills</h2>
+                    <p id="portfolio">I perform well in work groups, I am responsible, punctual and proactive.</p>
+                </div>
+            </div>
+    </section>
+
+    <!--Portfolio-->
+    <section class="p-2 shadow-lg bg-slate-50">
+        <h1 class="text-3xl sm:text-4xl">Portfolio</h1>
+        <h3 class="text-2xl mb-2 text-center">Projects that I've done</h3>
+        <div class="grid grid-cols-1 gap-6 justify-items-center mx-auto sm:grid-cols-2 md:grid-cols-4">
+            <a href="#" class="shadow-lg">
+                <h4 class="text-xl font-semibold text-center">Lorem</h4>
+                <img src="/img/imgNotAvailable.png" alt="Image not available">
+            </a>
+            <a href="#" class="shadow-lg">
+                <h4 class="text-xl font-semibold text-center">Lorem</h4>
+                <img src="/img/imgNotAvailable.png" alt="Image not available">
+            </a>
+            <a href="#" class="shadow-lg">
+                <h4 class="text-xl font-semibold text-center">Lorem</h4>
+                <img src="/img/imgNotAvailable.png" alt="Image not available">
+            </a>
+            <a href="#" class="shadow-lg">
+                <h4 class="text-xl font-semibold text-center">Lorem</h4>
+                <img src="/img/imgNotAvailable.png" alt="Image not available"  id="contact">
+            </a>
+        </div>
+    </section>
+
+
+    <!--Contact me!-->
+    <section class="p-2">
+        <h2 class="mb-3 text-3xl sm:text-4xl">Contact me!</h2>
+        <div class="flex flex-col sm:flex-row sm:justify-evenly">
+            <div class="p-2">
+                <h4 class="text-xl font-medium">Email</h4>
+                <a href="mailto:vega.allan11@gmail.com" class="mb-5 block break-words text-blue-700 underline underline-offset-8">vega.allan11@gmail.com</a>
+                <h4 class="text-xl font-medium">Address</h4>
+                <p>Panama, Panama City</p>
+            </div>
+            <div class="shadow-lg p-4 rounded-lg  sm:w-2/6">
+                <form id="contactMe">
+                    <label for="fname"> Full name</label><br>
+                    <input type="text" name="fname" id="fname" class="bg-gray-50 border outline-0 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"><br>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-3"></textarea>
+                    <input type="submit" value="Submit" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 cursor-pointer">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="flex flex-col items-center justify-between p-2 gap-2 bg-slate-600 text-white sm:flex-row">
+        <span>© 2024 Allan Vega. All Rights Reserved.</span> <span class="flex gap-2"> <a href="#"><i class="fa-brands fa-instagram"></i></a> <a href="#"><i class="fa-brands fa-facebook"></i></a> <a href="#"><i class="fa-brands fa-linkedin"></i></a> <a href="#"><i class="fa-brands fa-github"></i></a> </span>
+    </footer>
+
+    
+
+</body>
+</html>
