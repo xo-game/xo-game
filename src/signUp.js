@@ -38,7 +38,7 @@ function verifyPasswordEquality() {
         alert('The proccess was success. Welcome!')
     }
     else{
-        alert("The password don't matches");
+        alert("The password don't match");
     }
 }
 
