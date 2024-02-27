@@ -32,8 +32,10 @@ Verify the password equality
 function verifyPasswordEquality() {
     const pwd1 = document.getElementById('pwd').value;
     const pwd2 = document.getElementById('pwdConfirm').value;
+
+    //if both passwords are equal, print a success message
     if(pwd1 === pwd2) {
-        alert('The proccess was success!')
+        alert('The proccess was success. Welcome!')
     }
     else{
         alert("The password don't matches");
@@ -49,9 +51,9 @@ function verifyEmail(event) {
     event.preventDefault();
     const email = document.getElementById('email').value.toLowerCase();
 
+    //the email needs to end with @narcis.com
     if(email.endsWith('@narcis.com')) {
         alert('The email exist');
-        alert(email);
         verifyPasswordEquality();
     }
     else {
