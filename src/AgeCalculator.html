@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/4695656be6.js" crossorigin="anonymous"></script>
+    <title>Age Calculator</title>
+</head>
+<body>
+    <!--Background gray-->
+    <div class="bg-slate-100 h-screen p-5">
+        <!--input fields-->
+        <div class="bg-white mx-auto mt-5 p-5 rounded-xl rounded-br-[100px] sm:w-1/2 sm:mt-10">
+            <h1 class="text-3xl mb-7 text-center font-medium sm:text-5xl">Age Calculator</h1>
+            <form method="post" class="flex justify-around mb-8">
+                <div>
+                    <label for="day" class="text-gray-500 font-medium tracking-widest">Day</label><br>
+                    <input type="text" name="day" id="dayIn" class="w-14 mt-2 p-2 rounded-md border-gray-400 border-[1px] focus:outline-none focus:border-blue-500 focus:bg-slate-50">
+                    <p id="errD" class="text-red-500 font-bold break all w-14"></p>                    
+                </div>
+                <div>
+                    <label for="month" class="text-gray-500 font-medium tracking-widest">Month</label><br>
+                    <input type="text" name="month" id="monthIn" class="w-14 mt-2 p-2 rounded-md border-gray-400 border-[1px] focus:outline-none focus:border-blue-500 focus:bg-slate-50">
+                    <p id="errM" class="text-red-500 font-bold break all w-14"></p>
+                </div>
+                <div>
+                    <label for="year" class="text-gray-500 font-medium tracking-widest">Year</label><br>
+                    <input type="text" name="year" id="yearIn" class="w-14 mt-2 p-2 rounded-md border-gray-400 border-[1px] focus:outline-none focus:border-blue-500 focus:bg-slate-50">
+                    <p id="errY" class="text-red-500 font-bold break all w-14"></p>
+                </div>
+            </form>
+
+            <!--separation-->
+            <div class="flex items-center">
+                <!--line-->
+                <div class="h-[2px] w-1/2 bg-gray-400"></div>
+            <!--arrow inside circle-->
+                <div id="calculateBtn" class="rounded-full bg-blue-500 py-3 px-5 cursor-pointer hover:bg-blue-400 active:bg-blue-600">
+                    <i class="fa-solid fa-equals text-white"></i>
+                </div>
+            <!--line-->
+            <div class="h-[2px] w-1/2 bg-gray-400"></div>
+            </div>
+            
+            <!--results-->
+            <div>
+                <!--years-->
+                <div class="flex items-baseline">
+                    <div id="yearOut" class="flex w-max mr-2 text-3xl font-bold text-blue-500">
+                        <div class="h-2 w-6 mr-1 bg-blue-500 rounded-full"></div>
+                        <div class="h-2 w-6 bg-blue-500 rounded-full"></div>
+                    </div>
+                    <p class="text-3xl font-extrabold sm:text-4xl">Year(s)</p>
+                </div>
+
+                <!--months-->
+                <div class="flex items-baseline">
+                    <div id="monthOut" class="flex w-max mr-2 text-3xl font-bold text-blue-500">
+                        <div class="h-2 w-6 mr-1 bg-blue-500 rounded-full"></div>
+                        <div class="h-2 w-6 bg-blue-500 rounded-full"></div>
+                    </div>
+                    <p class="text-3xl font-extrabold break-all sm:text-4xl">Month(s)</p>
+                </div>
+
+                <!--Days-->
+                <div class="flex items-baseline">
+                    <div id="dayOut" class="flex w-max mr-2 text-3xl font-bold text-blue-500">
+                        <div class="h-2 w-6 mr-1 bg-blue-500 rounded-full"></div>
+                        <div class="h-2 w-6 bg-blue-500 rounded-full"></div>
+                    </div>
+                    <p class="text-3xl font-extrabold sm:text-4xl">Day(s)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--this is the footer with the credits part-->
+    <footer class="w-full sm:fixed sm:bottom-0">
+        <p class="bg-orange-600 p-4 font-medium font-serif">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="underline underline-offset-4 text-white"> Frontend Mentor</a> Coded by <a href="https://github.com/vega-allan-11" class="underline underline-offset-4 text-white">Allan Vega</a></p>
+    </footer>
+
+    <script src="AgeCalculator.js"></script>
+</body>
+</html>

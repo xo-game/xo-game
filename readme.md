@@ -1,4 +1,3 @@
-#signUp-form
+#Age Calculator
 
-This form don't make a real registration. This was made to practice the programming skills.
-
+This calculator is awesome to know your age

@@ -1,9 +1,0 @@
-
-@media only screen and (min-width:1024px) {
-    .container {
-        background-image:url('/img/bg-intro-desktop.png')
-    }
-    body {
-        background-image:url('/img/background-body-pc.jpg')
-    }
-}
