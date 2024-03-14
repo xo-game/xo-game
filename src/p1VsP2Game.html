@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/4695656be6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="output.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <title>Tic Tac Toe</title>
+
+</head>
+
+<body class="h-screen flex flex-col justify-between text-xl font-mono text-white select-none sm:text-2xl">
+    <img id="bgImage" class="brightness-50 h-screen fixed w-full -z-50" src="">
+    <div class="mb-6">
+        <!--Game title-->
+        <div class="flex flex-col items-center mb-7">
+            <h3 class="text-white font-extrabold text-3xl text-center my-6 sm:font-black sm:text-6xl">Player 1 vs Player 2</h3>
+
+            <!--Icons options-->
+            <div class="flex gap-x-4">
+
+                <!--Exit icon-->
+                <div id='logOut' class="w-max rounded-full bg-slate-500 px-3 py-2 cursor-pointer hover:bg-slate-400 active:bg-slate-600">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+
+                <!--Sound icon-->
+                <div id='buttonAudio' class="w-max rounded-full bg-slate-500 px-3 py-2 cursor-pointer hover:bg-slate-400 active:bg-slate-600">
+                    <i id="iconAudio" class="fa-solid fa-volume-xmark"></i>
+                </div>
+                
+                <!--Restart icon-->
+                <div id='restart' class="w-max rounded-full bg-slate-500 px-3 py-2 cursor-pointer hover:bg-slate-400 active:bg-slate-600">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--Current time-->
+        <div class="mx-2">Time <i class="fa-solid fa-arrow-right"></i> <span id="time"></span></div>
+
+        <!--Current turn-->
+        <div class="mx-2 mb-7">Turn <i class="fa-solid fa-arrow-right"></i> <span id="turn"></span></div>
+
+        <!--board game (the three square winners will be green when you are playing p1 vs p2 and will be red when you are player vs cpu)-->
+            <div id="board" class="grid grid-cols-3 mx-2 h-60 justify-center font-black sm:w-1/5 sm:m-auto">
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 border-r-2 cursor-pointer  active:bg-gray-900" data-cell-index="0"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 border-r-2 cursor-pointer active:bg-gray-900" data-cell-index="1"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 cursor-pointer active:bg-gray-900" data-cell-index="2"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 border-r-2 cursor-pointer active:bg-gray-900" data-cell-index="3"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 border-r-2 cursor-pointer active:bg-gray-900" data-cell-index="4"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-b-2 cursor-pointer active:bg-gray-900" data-cell-index="5"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-r-2 cursor-pointer active:bg-gray-900" data-cell-index="6"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 border-r-2 cursor-pointer active:bg-gray-900" data-cell-index="7"></div>
+                <div class="cell flex items-center justify-center h-20 rounded-md bg-gray-700 cursor-pointer active:bg-gray-900" data-cell-index="8"></div>
+            </div>
+
+    </div>
+
+  <!--Footer with credits-->
+  <footer class="text-sm w-full text-white sm:text-lg">
+    <p class="select-none bg-indigo-800 p-4 font-medium">Coded by <a href="https://github.com/vega-allan-11" class="underline underline-offset-[7px]">Allan Vega</a></p>
+  </footer>
+
+    <!--Audio tag-->
+    <audio id="mainAudio" src="/audio/fairyTaleMagicalChristmas.mp3" type="audio/mp3" loop></audio>
+
+    <!--Modals-->
+    <div id="winnerModal" class="modal text-xl hidden fixed h-screen w-full top-0 left-0 items-start justify-center bg-opacity-75 sm:items-center sm:text-2xl">
+        <div class="bg-amber-100 flex flex-col gap-y-4 justify-between items-center w-full p-7 mt-20 text-center font-serif text-amber-950 font-bold sm:mt-0 sm:w-3/4 sm:rounded-2xl md:w-1/2">
+            <span id="textAfterPlay"></span>
+            <button type="button" class="backGame focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 rounded-lg p-2.5 mb-2 sm:w-3/4 lg:w-1/2">Back to the game</button>
+        </div>
+    </div>
+
+    <div id="exit" class="modal text-xl hidden fixed h-screen w-full top-0 left-0 bg-black items-start justify-center bg-opacity-75 transition ease-in-out duration-300 sm:items-center sm:text-2xl">
+        <div class="bg-white flex flex-col gap-y-4 justify-between items-center w-full p-7 mt-20 text-center font-serif text-amber-950 font-bold sm:mt-0 sm:w-3/4 sm:rounded-2xl md:w-1/2">
+            <span id="textExitGame">Are you sure you want to get out of the game?</span>
+            <div class="buttons flex flex-col gap-y-2 sm:flex-row sm:gap-x-2 sm:gap-y-0">
+                <button type="button" class="backGame focus:outline-none bg-gray-400 hover:bg-gray-300 focus:ring-4 focus:ring-gray-400 rounded-lg p-3 block">Cancel</button>
+                <a href="index.html" id="exit" type="button" class="focus:outline-none bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-500 rounded-lg p-2.5 block">Confirm</a>
+            </div>
+        </div>
+    </div>
+
+    <!--script that contains functionalities-->
+    <script src="p1VsP2Game.js" type="module"></script>
+</body>
+</html>

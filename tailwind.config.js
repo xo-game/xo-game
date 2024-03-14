@@ -3,9 +3,10 @@ module.exports = {
   content: ["./src/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        'poppins': ['Poppins', 'ui-monospace'],
-      }
+      backgroundColor: {
+        'selected': 'orange',
+        'unselected': 'none',
+      },
     },
   },
   plugins: [],
