@@ -6,7 +6,7 @@
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./default/input.css -o ./src/output.css --watch"
+    "dev": "tailwindcss -i ./default/input.css -o ./docs/output.css --watch"
   },
   "author": "",
   "license": "ISC",

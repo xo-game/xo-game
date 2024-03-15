@@ -16,7 +16,7 @@
 
     <!--Game title-->
     <div class="flex items-center justify-between py-5">
-      <a href="/src/index.html"><i class="fa-solid fa-circle-left mx-2 cursor-pointer hover:text-indigo-200 active:text-indigo-400 sm:text-4xl"></i></a>
+      <a href="index.html"><i class="fa-solid fa-circle-left mx-2 cursor-pointer hover:text-indigo-200 active:text-indigo-400 sm:text-4xl"></i></a>
       <h1 class="mx-auto text-white font-extrabold text-3xl sm:font-black sm:text-6xl">TIC TAC TOE</h1>
   </div>
     
@@ -28,14 +28,14 @@
     </div>
     
     <!--About-->
-    <h2 class="text-center mb-5 mx-2 text-white text-2xl sm:text-4xl">Player 1 vs Player 2</h2>
+    <h2 class="text-center mb-5 mx-2 text-white text-2xl sm:text-4xl">Player vs CPU</h2>
     
     <!--Options to start the player1 vs player2-->
     <h3 class="text-white mb-6 mx-2 sm:text-3xl">Select the options</h3>
 
-    <!--Select the player1 symbol-->
+    <!--Select the player symbol-->
     <section class="mx-2 mb-5">
-      <h3 class="mb-3">Player 1 side</h3>
+      <h3 class="mb-3">Player side</h3>
       <div class="flex gap-x-2">
         <img id="p1X" src="/img/x-choice.png" alt="X-choice" class="bg-selected size-1/4 cursor-pointer transition ease-in-out hover:-translate-y-2 lg:size-2/12">
         <img id="p1O" src="/img/o-choice.png" alt="O-choice" class="bg-unselected size-1/4 cursor-pointer transition ease-in-out hover:-translate-y-2 lg:size-2/12">
@@ -43,15 +43,24 @@
     </section>
 
 
-    <!--The symbol of the player2 will be the opposite of player1-->
+    <!--The symbol of the CPU will be the opposite of player-->
     <section class="mx-2 mb-5">
-      <h3 class="mb-3">Player 2 side</h3>
+      <h3 class="mb-3">CPU side</h3>
       <div class="flex gap-x-2">
         <img id="p2X" src="/img/x-choice.png" alt="X-choice" class="bg-unselected size-1/4 cursor-pointer transition ease-in-out hover:-translate-y-2 lg:size-2/12">
         <img id="p2O" src="/img/o-choice.png" alt="O-choice" class="bg-selected size-1/4 cursor-pointer transition ease-in-out hover:-translate-y-2 lg:size-2/12">
       </div>
     </section>
 
+    <!--select the difficulty-->
+    <section class="mx-2 mb-5">
+      <h3 class="mb-3">Select the difficulty</h3>
+      <div class="flex gap-x-2">
+        <div id="newBie" class="bg-selected w-max rounded-2xl border-2 border-[orange] p-3 cursor-pointer transition ease-in-out hover:-translate-y-2">New bie</div>
+        <div id="sensei" class="bg-unselected border-2 border-indigo-500 w-max rounded-2xl p-3 border-1 cursor-pointer transition ease-in-out hover:-translate-y-2">Sensei</div>
+
+      </div>
+    </section>
 
     <!--Select the arena (the default arena is boxing arena (open))-->
     <section class="mx-2 mb-5">
@@ -100,7 +109,7 @@
       </div>      
     </section>
     <!--Play option-->
-    <a href="/src/p1VsP2Game.html"><button type="button" class="mx-auto block text-white mb-7 bg-green-700 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full px-5 py-2.5 text-center sm:mx-0">PLAY</button></a>
+    <a href="pVsCpuGame.html"><button type="button" class="mx-auto block text-white mb-7 bg-green-700 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full px-5 py-2.5 text-center sm:mx-0">PLAY</button></a>
 
   </main>
 
@@ -115,6 +124,6 @@
   <audio id="mainAudio" src="/audio/fairyTaleMagicalChristmas.mp3" type="audio/mp3" loop></audio>
 
   <!--JS src-->
-  <script src="p1VsP2Menu.js" type="module"></script>
+  <script src="pVsCpuMenu.js" type="module"></script>
 </body>
 </html>
