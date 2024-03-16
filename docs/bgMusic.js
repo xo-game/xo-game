@@ -7,20 +7,23 @@ CHECKED
 FUNCTIONS
 */
 
-//to mute the music
+//to play the music
 export function playMusic() {
     setVolume();
     mainAudio.play();
 }
 
-//to quit the music
+//to mute the music
 export function mutedMusic() {
     mainAudio.muted = true;
 }
+
+//to remove the muted status of the music
 export function noMutedMusic() {
     mainAudio.muted = false;
 }
 
+//to pause the music
 export function stopAudio() {
     mainAudio.pause();
 }

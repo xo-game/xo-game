@@ -310,9 +310,11 @@ function setLocalDifficulty(difficult) {
 //Next to select the arena you want when you are playing, the bakcground-color will have the arena bg-selected
 export function selectedArena(arena) {
     if(arena == 'boxingOpen') {
+        body.classList.add('bg-indigo-950');
         bgImage.src = '/img/boxingOpen.jpg';
     }
     else if(arena == 'boxingClose') {
+        body.classList.add('bg-indigo-950');
         bgImage.src = '/img/boxingClose.jpg';
     }
     else if(arena == 'bgIndigo500') {
