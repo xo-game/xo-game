@@ -1,6 +1,5 @@
 /*
-This file contains everything related to the menu of player vs cpu
-CHECKED
+This file contains everything related to the "player vs cpu menu"
 */
 
 /*

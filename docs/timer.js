@@ -1,6 +1,5 @@
 /*
 This file contain all functions related to the timer in the game!
-CHECKED
 */
 
 /*

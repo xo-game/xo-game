@@ -1,6 +1,5 @@
 /* 
-This file contain all js mandatory in howToPlay.html
-CHECKED
+This file contains all js mandatory in howToPlay.html
 */
 
 /*

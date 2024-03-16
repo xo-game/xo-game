@@ -1,6 +1,5 @@
 /*
-This file contain all functions related to the background music of this game!
-CHECKED
+This file contains everything related to the background music of this game!
 */
 
 /*

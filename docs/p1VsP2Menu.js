@@ -1,6 +1,5 @@
 /* 
-This file contains everything related in the menu of player1 vs player2
-CHECKED
+This file contains everything related in the "player1 vs player2 menu"
 */
 
 /*

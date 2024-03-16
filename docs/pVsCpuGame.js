@@ -1,5 +1,5 @@
 /*
-This file contains everything related to the player vs cpu game!
+This file contains everything related to the "player vs cpu game"!
 */
 
 /*

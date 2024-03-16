@@ -1,5 +1,5 @@
 /*
-This file contains everything related to the player1 vs player2 game!
+This file contains everything related to the "player1 vs player2" game!
 */
 
 /*

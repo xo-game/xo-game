@@ -1,6 +1,5 @@
 /*
-This file contain all functions related to the options that you choose when you are in player1 vs player2 menu or player vs cpu menu!
-CHECKED
+This file contains everything related to the options that you choose when you are in "player1 vs player2 menu" or "player vs cpu menu"!
 */
 
 /*

@@ -1,6 +1,5 @@
 /*
-This file contain everything related to the "player1 vs cpu" and "player1 vs player2" game!
-CHECKED
+This file contains everything related to the "player1 vs cpu" and "player1 vs player2" game!
 */
 
 //to restart the game this will erase the content inside the board and reset the timer
