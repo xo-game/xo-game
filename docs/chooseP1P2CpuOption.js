@@ -309,26 +309,29 @@ function setLocalDifficulty(difficult) {
 //Next to select the arena you want when you are playing, the bakcground-color will have the arena bg-selected
 export function selectedArena(arena) {
     if(arena == 'boxingOpen') {
-        body.classList.add('bg-indigo-950');
+        bgImage.classList.add('h-screen');
         bgImage.src = '/img/boxingOpen.jpg';
     }
     else if(arena == 'boxingClose') {
-        body.classList.add('bg-indigo-950');
+        bgImage.classList.add('h-screen');
         bgImage.src = '/img/boxingClose.jpg';
     }
     else if(arena == 'bgIndigo500') {
         bgImage.classList.remove('block');
         bgImage.classList.add('hidden');
+        body.classList.remove('bg-indigo-950');
         body.classList.add('bg-indigo-500');
     }
     else if(arena == 'bgBlack') {
         bgImage.classList.remove('block');
         bgImage.classList.add('hidden');
+        body.classList.remove('bg-indigo-950');
         body.classList.add('bg-black');
     }
     else if(arena == 'bgOrange500') {
         bgImage.classList.remove('block');
         bgImage.classList.add('hidden');
+        body.classList.remove('bg-indigo-950');
         body.classList.add('bg-orange-500');
     }
 } 
