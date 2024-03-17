@@ -42,5 +42,3 @@ document.addEventListener('DOMContentLoaded', chooseOption.defaultOptions);
 bgMusic.buttonAudio.addEventListener('click', bgMusic.changeAudioIcon);
 
 window.addEventListener('blur', bgMusic.stopAudio);
-
-window.addEventListener('blur', bgMusic.changeAudioIcon);
