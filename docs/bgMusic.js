@@ -56,7 +56,7 @@ ELEMENTS
 */
 
 //this tis the icon audio
-export const iconAudio = document.getElementById('iconAudio');
+const iconAudio = document.getElementById('iconAudio');
 
 //this is the audio tag that is in the html doc
 export const mainAudio = document.getElementById('mainAudio');
