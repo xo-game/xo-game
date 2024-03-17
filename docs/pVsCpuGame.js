@@ -108,7 +108,7 @@ function checkResult(){
     if(roundDraw && !playerWon && !cpuWon) {
         gameActive = false;
         timer.startStopTimer(gameActive);
-        textAfterPlay.textContent = 'Draw';
+        textAfterPlay.textContent = 'Draw!';
         winnerModal.classList.add('bg-yellow-600');
         openModalWinner();
         return;
