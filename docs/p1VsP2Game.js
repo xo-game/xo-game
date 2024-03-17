@@ -197,8 +197,6 @@ window.addEventListener('load', timer.startStopTimer);
 
 window.addEventListener('blur', bgMusic.stopAudio);
 
-window.addEventListener('blur', bgMusic.changeAudioIcon);
-
 selectedArena(game.arena);
 
 selectedMusic(game.music);
