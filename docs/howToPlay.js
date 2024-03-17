@@ -59,5 +59,3 @@ circleXmark.addEventListener('click', closeModalImg);
 bgMusic.buttonAudio.addEventListener('click', bgMusic.changeAudioIcon);
 
 window.addEventListener('blur', bgMusic.stopAudio);
-
-window.addEventListener('blur', bgMusic.changeAudioIcon);
