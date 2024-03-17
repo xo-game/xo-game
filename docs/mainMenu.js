@@ -13,14 +13,14 @@ FUNCTIONS
 
 //when you hover these functions (changeImOp1, changeImgPCpu, changeImgHowTPlay) the image in the square will change
 function changeImgP1P2() {
-    pmImage.src = '/img/p1VsP2Image.jpg';
+    pmImage.src = 'https://github.com/xo-game/xo-game/blob/main/img/p1VsP2Image.jpg?raw=true';
 }
 
 function changeImgPCpu() {
-    pmImage.src = '/img/pVsCpuImage.jpg';}
+    pmImage.src = 'https://github.com/xo-game/xo-game/blob/main/img/pVsCpuImage.jpg?raw=true';}
 
 function changeImgHowTPlay() {
-    pmImage.src = '/img/howToPlay.jpg';
+    pmImage.src = 'https://github.com/xo-game/xo-game/blob/main/img/howToPlay.jpg?raw=true';
 }
 
 export function setP1VsP2() {
