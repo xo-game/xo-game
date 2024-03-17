@@ -67,7 +67,5 @@ howToPlay.addEventListener('pointerover', changeImgHowTPlay);
 
 window.addEventListener('blur', bgMusic.stopAudio);
 
-window.addEventListener('blur', bgMusic.changeAudioIcon);
-
 //WELCOME MESSAGE (only in the main menu is visible)
 console.log('Welcome to TIC TAC TOE, this game was created by Allan Vega');
