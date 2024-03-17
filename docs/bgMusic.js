@@ -25,6 +25,9 @@ export function noMutedMusic() {
 //to pause the music
 export function stopAudio() {
     mainAudio.pause();
+    if(iconAudio.classList.contains('fa-volume-high')) {
+        changeAudioIcon();
+    }
 }
 
 //to change the volume of the music
