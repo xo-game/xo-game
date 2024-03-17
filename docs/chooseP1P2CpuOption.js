@@ -310,11 +310,11 @@ function setLocalDifficulty(difficult) {
 export function selectedArena(arena) {
     if(arena == 'boxingOpen') {
         bgImage.classList.add('h-screen');
-        bgImage.src = '/img/boxingOpen.jpg';
+        bgImage.src = 'https://github.com/xo-game/xo-game/blob/main/img/boxingOpen.jpg?raw=true';
     }
     else if(arena == 'boxingClose') {
         bgImage.classList.add('h-screen');
-        bgImage.src = '/img/boxingClose.jpg';
+        bgImage.src = 'https://github.com/xo-game/xo-game/blob/main/img/boxingClose.jpg?raw=true';
     }
     else if(arena == 'bgIndigo500') {
         bgImage.classList.remove('block');
@@ -339,13 +339,13 @@ export function selectedArena(arena) {
 //Next to select the music you want when you are playing, the bakcground-color will have the music bg-selected
 export function selectedMusic(music) {
     if(music == 'fairyTale') {
-        bgMusic.mainAudio.src = '/audio/fairyTaleMagicalChristmas.mp3';
+        bgMusic.mainAudio.src = 'https://raw.githubusercontent.com/xo-game/xo-game/main/audio/fairyTaleMagicalChristmas.mp3';
     }
     else if(music == 'cinematicAdventure') {
-        bgMusic.mainAudio.src = '/audio/cinematicAdventure.mp3';
+        bgMusic.mainAudio.src = 'https://raw.githubusercontent.com/xo-game/xo-game/main/audio/cinematicAdventure.mp3';
     }
     else if(music == 'acousticWedding') {
-        bgMusic.mainAudio.src = '/audio/acousticWedding.mp3';
+        bgMusic.mainAudio.src = 'https://raw.githubusercontent.com/xo-game/xo-game/main/audio/acousticWedding.mp3';
     }
 }
 
